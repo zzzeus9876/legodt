@@ -52,10 +52,10 @@ body {
     right: 3rem;
     width: 32px;
     height: 32px;
-    background: url(/04-legodt-index/images/heart-gray.png) no-repeat;
+    background: url(/images/heart-gray.png) no-repeat;
 
     &.active {
-      background: url(/04-legodt-index/images/heart-pink.png) no-repeat;
+      background: url(/images/heart-pink.png) no-repeat;
     }
   }
 }
