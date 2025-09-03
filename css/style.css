@@ -15,18 +15,19 @@ body {
   font-family: 'Outfit', 'suit', sans-serif;
   font-size: 1.6rem;
   color: var(--font-base-color);
+  background: #f3f3f3;
 }
 
 .wide-inner {
   margin: 0 2.5%;
-  background-color: rgba(255, 0, 0, 0.2);
+  /* background-color: rgba(255, 0, 0, 0.2); */
   position: relative;
 }
 .inner {
   max-width: 1680px;
   padding: 0 2.5%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 255, 0.2);
+  /* background-color: rgba(0, 0, 255, 0.2); */
 }
 .img-box {
   position: relative;
@@ -65,7 +66,7 @@ header {
   height: 7rem;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .logo {
@@ -96,7 +97,7 @@ header {
   gap: 2.4rem;
 
   > li {
-    background-color: green;
+    /* background-color: green; */
     position: relative;
     > a {
       font-size: 2rem;
@@ -134,7 +135,6 @@ header {
 
 /* 서브메뉴를 전부 볼 때 */
 .main-menu:hover .depth1 {
-  display: block;
   height: 120px;
 }
 /* 서브메뉴의 배경이 100%인 경우 header fixed 일 때 사용할 것 */
@@ -142,7 +142,7 @@ header {
 .depth1 {
   /* display: none; */
   /* 잠깐 숨겨놓은 것 */
-  background-color: skyblue;
+  /* background-color: skyblue; */
   /* 더 이상 메인메뉴의 영역이 늘어나지 않게 독립시킴. absolute */
   position: absolute;
   /* border: 1px solid black; */
@@ -151,6 +151,7 @@ header {
   height: 0;
   overflow: hidden;
   transition: 0.5s;
+  height: 0;
 }
 
 .header-right {
@@ -171,7 +172,7 @@ header {
 
 .header-right > ul > li {
   position: relative;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   line-height: 70px;
   /* line-height로 영역을 늘려서 메뉴쪽에 마우스를 호버해도 메뉴가 나올 수 있도록 !!  */
 }
@@ -298,7 +299,7 @@ header {
   display: flex;
   gap: 30px;
   width: 50%;
-  z-index: 1000;
+  z-index: 999;
   /* flex 줬으니까 justify-content로 가운데정렬 */
   justify-content: center;
 }
@@ -365,7 +366,7 @@ header {
 }
 
 .make-your-wrap {
-  background: #9a9a9a;
+  /* background: #9a9a9a; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -374,6 +375,7 @@ header {
 }
 
 .make-your-wrap .make-your {
+  position: relative;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a08be0+0,4695d6+51,95a9e5+98 */
   background: linear-gradient(
     to bottom,
@@ -737,7 +739,7 @@ footer {
   font-size: 1rem;
 }
 .company-info address {
-  width: 900px;
+  /* width: 900px; */
   font-size: 12px;
   margin: 20px 0 0;
   line-height: 1.8;
